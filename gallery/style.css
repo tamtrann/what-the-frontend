@@ -1,0 +1,21 @@
+body:has(.gallery) { color-scheme: light; font: 16px/1.5 system-ui, sans-serif; background: #f7f5ef; color: #242622; }
+.gallery, .gallery * { box-sizing: border-box; }
+.gallery { max-width: 1050px; padding: 0 clamp(16px, 4vw, 56px) 40px; margin: auto; }
+.gallery > header, .gallery-title { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; }
+.gallery > header { padding: 20px 0; border-bottom: 1px solid #b5b6a9; }
+.gallery > header a:first-child { font-weight: 800; letter-spacing: -.045em; text-decoration: none; }
+.gallery a { color: inherit; text-underline-offset: .2em; }
+.type-tabs { display: flex; gap: 6px; flex-wrap: wrap; padding: 18px 0; }
+.type-tabs a { padding: 6px 14px; border-radius: 18px; text-decoration: none; }
+.type-tabs a:hover { background: #e8e5db; }
+.type-tabs a[aria-current="page"] { background: #242622; color: white; }
+.project-card { max-width: 660px; margin: 24px auto 64px; }
+.project-card.framed { max-width: none; }
+.page-preview { display: block; width: 100%; height: clamp(320px, 70svh, 680px); border: 1px solid #babbb4; background: white; }
+.project-links { display: flex; flex-wrap: wrap; gap: 12px; }
+.gallery-title { margin-bottom: 16px; }
+.gallery-title { flex-wrap: wrap; }
+.gallery-title h2 { font-size: clamp(1.35rem, 4vw, 2.1rem); letter-spacing: -.045em; margin: 0; line-height: 1.1; }
+.gallery-title h2 a { text-decoration: none; }
+.project-links a { font-size: .9rem; white-space: nowrap; }
+.gallery button:focus-visible, .gallery a:focus-visible { outline: 3px solid #a53f26; outline-offset: 4px; }
